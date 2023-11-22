@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "165677034600",
+    "project_id": "firbase-manu-echi-gero-dendo",
+    "storage_bucket": "firbase-manu-echi-gero-dendo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:165677034600:android:063cca69bcc257d57e1fdd",
+        "android_client_info": {
+          "package_name": "com.example.finaldap"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-jhU7ZvB3b6rYspkrfL6q9qapEurDvQE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

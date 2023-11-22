@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navegacion"
+    app:startDestination="@id/pantallaInicio">
+    <fragment
+        android:id="@+id/pantallaLogin2"
+        android:name="com.example.finaldap.PantallaLogin"
+        android:label="fragment_pantalla_login"
+        tools:layout="@layout/fragment_pantalla_login" >
+        <action
+            android:id="@+id/action_pantallaLogin2_to_pantallaRegistrar"
+            app:destination="@id/pantallaRegistrar" />
+        <action
+            android:id="@+id/action_pantallaLogin2_to_pantallaInicio"
+            app:destination="@id/pantallaInicio" />
+    </fragment>
+    <fragment
+        android:id="@+id/pantallaRegistrar"
+        android:name="com.example.finaldap.PantallaRegistrar"
+        android:label="fragment_pantalla_registrar"
+        tools:layout="@layout/fragment_pantalla_registrar" >
+        <action
+            android:id="@+id/action_pantallaRegistrar_to_pantallaInicio"
+            app:destination="@id/pantallaInicio" />
+    </fragment>
+    <fragment
+        android:id="@+id/pantallaInicio"
+        android:name="com.example.finaldap.PantallaInicio"
+        android:label="fragment_pantalla_inicio"
+        tools:layout="@layout/fragment_pantalla_inicio" >
+        <action
+            android:id="@+id/action_pantallaInicio_to_crearEquipo"
+            app:destination="@id/crearEquipo" />
+        <action
+            android:id="@+id/action_pantallaInicio_to_datosEquipo"
+            app:destination="@id/datosEquipo" />
+        <action
+            android:id="@+id/action_pantallaInicio_to_editarEquipo"
+            app:destination="@id/editarEquipo" />
+        <action
+            android:id="@+id/action_pantallaInicio_to_editarEquipo2"
+            app:destination="@id/editarEquipo" />
+    </fragment>
+    <fragment
+        android:id="@+id/crearEquipo"
+        android:name="com.example.finaldap.CrearEquipo"
+        android:label="fragment_crear_equipo"
+        tools:layout="@layout/fragment_crear_equipo" >
+        <action
+            android:id="@+id/action_crearEquipo_to_pantallaInicio"
+            app:destination="@id/pantallaInicio" />
+    </fragment>
+    <fragment
+        android:id="@+id/datosEquipo"
+        android:name="com.example.finaldap.datosEquipo"
+        android:label="fragment_datos_equipo"
+        tools:layout="@layout/fragment_datos_equipo" />
+    <fragment
+        android:id="@+id/editarEquipo"
+        android:name="com.example.finaldap.editarEquipo"
+        android:label="fragment_editar_equipo"
+        tools:layout="@layout/fragment_editar_equipo" >
+        <action
+            android:id="@+id/action_editarEquipo_to_pantallaInicio"
+            app:destination="@id/pantallaInicio" />
+    </fragment>
+</navigation>
